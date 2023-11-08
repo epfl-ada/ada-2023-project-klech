@@ -1,5 +1,48 @@
 Instructions below
 
+1. Title
+Man vs LLMachine: Comparing Human and ChatGPT Wikispeedia Strategy
+
+2. Abstract
+LLMs are trained to interact as humans do, but do they think like humans as well? To answer this question, we will enlist ChatGPT as a participant in Wikispeedia
+and evaluate its performance across the most popular origin-goal page pairs played by humans. Our analysis will first parse ChatGPT's decisions for human 'readability' - that is, 
+we will employ word embeddings, TF-IDF vectorization on page content, and auxiliary prompts to determine if we, as humans, can justify ChatGPT's chosen paths. Next, we
+will compare ChatGPT's paths to human paths, measuring levels of similarity in navigation decisions, time-to-goal, learning rate, and rates of 'course correction', thereby
+gauging how closely ChatGPT emulates human strategization. Given the extension of Wikispeedia to the domain of human information organization, these results will also
+measure how effectively ChatGPT can emulate human semantic relations. 
+
+3. Research Questions
+In the context of Wikispeedia:
+- Does ChatGPT pursue page-paths that are sensical to human researchers?
+- Can ChatGPT explain its Wikispeedia decisions in a way that is sensical to human researchers?
+- Does ChatGPT employ the same 'zoom-out' to hub, 'zoom-in' to spoke strategy as humans?
+- How does ChatGPT's success time compare to human players?
+- To what extent does ChatGPT's strategy and performance change over successive games with the same origin-goal pair?
+- How often does ChatGPT 'backtrack' and/or abandon a game attempt compared to humans?
+
+4. Proposed Additional Datasets
+The primary external dataset for this project will be ChatGPT's selected paths in Wikispeedia games. 
+These will be developed using a stable, curated prompt deployed iteratively in the OpenAI API in Python, for which we have already developed a proof-of-concept.
+
+5. Methods
+TF-IDF vectorization
+Word Embeddings
+Wikispeedia-derived semantic scores
+OpenAI API
+?
+
+6. Proposed Timeline
+?
+
+7. Organization within the team
+?
+
+8. Questions for TAs (optional)
+One possibility for extending the scope of the project (or even course correct if ChatGPT fails to provide sensible Wikispeedia paths) would be to obtain the human-derived semantic scores from Wikispeedia and evaluate ChatGPT's level of agreement. 
+For example, we could repeatedly present three concepts to ChatGPT and ask it to select the 'least-similar' from the group. Levels of ChatGPT agreement with Wikispeedia-derived scores would be another approach to measuring LLM's ability to think like humans.
+
+------------------
+
 Title
 
 Abstract: A 150 word description of the project idea and goals. What’s the motivation behind your project? What story would you like to tell, and why?
