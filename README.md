@@ -52,10 +52,8 @@ OpenAI API
 ?
 
 7. Proposed Timeline
-?
 
 8. Organization within the team
-?
 
 ------------------
 
