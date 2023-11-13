@@ -18,7 +18,6 @@ In the context of Wikispeedia:
 - Can Falcon 7B explain its Wikispeedia decisions in a way that is sensical to human researchers?
 - Does Falcon 7B employ the same 'zoom-out' to hub, 'zoom-in' to spoke Wikispeedia strategy as humans?
 - How does Falcon 7B's rounds-to-goal compare to human players?
-- To what extent does Falcon 7B's strategy and performance change over successive games with the same origin-goal pair?
 - How often does Falcon 7B 'backtrack' compared to humans?
 
 4. Proposed Additional Datasets
@@ -42,19 +41,19 @@ Finally, we expect to have _ games played by Falcon 7B across _ origin-goal pair
 Let 'identity' refer to a player's status as human or LLM and 'pair' refer to a Wikispeedia game's origin-goal Wikipedia page pair.
 
 To determine whether Falcon 7B's page paths are sensical to humans *at scale*, 
+
 To compare average rounds-to-goal between Falcon 7B and humans, we can average rounds-to-goal at the identity-pair level, match pairs inter-identity, 
 take the difference between the human and LLM averages, and perform a t-test for difference from 0 on the averages of these differences.
 
+To determine whether Falcon 7B employs the same 'zoom-out' to hub, 'zoom-in' to spoke strategy as humans, we can retain Falcon 7B Wikispeedia data, calculate average 
+concept degree (# of Wikipedia page links) over time at the pair level, fit pairs to a quadratic model, and perform goodness of fit tests (a concave quadratic curve would
+suggest a 'zoom-in zoom-out' strategy under this framework). A stronger version of this test might test for inequality in human vs. Falcon degree curves by creating the concept degree
+charts at the identity-pair level, matching pairs inter-identity, taking the geographic difference between the human and LLM average hub degree curves, and performing a t-test for 
+difference from 0 on the average of these differences.  
 
 - Does Falcon 7B pursue page-paths that are sensical to human researchers?
 - Can Falcon 7B explain its Wikispeedia decisions in a way that is sensical to human researchers?
-- Does Falcon 7B employ the same 'zoom-out' to hub, 'zoom-in' to spoke Wikispeedia strategy as humans?
-
-- To what extent does Falcon 7B's strategy and performance change over successive games with the same origin-goal pair?
 - How often does Falcon 7B 'backtrack' compared to humans?
-
-- 
-
 
 
 TF-IDF vectorization
