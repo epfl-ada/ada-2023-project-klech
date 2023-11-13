@@ -1,7 +1,9 @@
 1. Title
+   
 Man vs LLMachine: A Comparison of Human and LLM Wikispeedia Strategy
 
-3. Abstract
+2. Abstract
+   
 LLMs are trained to interact as humans do, but do they think like humans as well? To answer this question, we will enlist Falcon 7B as a participant in Wikispeedia
 and evaluate its performance across the most popular origin-goal page pairs played by humans. Our analysis will first parse Falcon 7B's decisions for human 'readability' - that is, 
 we will employ word embeddings, TF-IDF vectorization on page content, and auxiliary prompts to determine if we, as humans, can justify Falcon 7B's chosen paths. Next, we
@@ -9,7 +11,8 @@ will compare Falcon 7B's paths to human paths, measuring levels of similarity in
 gauging how closely Falcon 7B emulates human strategization. Given the extension of Wikispeedia to the domain of human information organization, these results will also
 measure how effectively ChatGPT can emulate human semantic relations. 
 
-4. Research Questions
+3. Research Questions
+   
 In the context of Wikispeedia:
 - Does Falcon 7B pursue page-paths that are sensical to human researchers?
 - Can Falcon 7B explain its Wikispeedia decisions in a way that is sensical to human researchers?
@@ -19,11 +22,13 @@ In the context of Wikispeedia:
 - How often does Falcon 7B 'backtrack' compared to humans?
 
 4. Proposed Additional Datasets
+   
 The primary external dataset for this project will be composed of the paths Falcon 7B selects when presented with the Wikispeedia game. 
 This data will be developed using a stable, curated prompt deployed iteratively via a HuggingFace Transformers API in Python and Google Collab.
 Our proposed prompt is: "Which concept is closest to <GOAL_CONCEPT> in the following set: <LINK_1>, <LINK_2>, ..., <LINK_N> ?"
 
 5. Methods
+   
 TF-IDF vectorization
 Word Embeddings
 Wikispeedia-derived semantic scores
@@ -36,7 +41,7 @@ OpenAI API
 7. Organization within the team
 ?
 
-8. Questions for TAs (optional)
+9. Questions for TAs (optional)
 One possibility for extending the scope of the project (or even course correct if ChatGPT fails to provide sensible Wikispeedia paths) would be to obtain the human-derived semantic scores from Wikispeedia and evaluate ChatGPT's level of agreement. 
 For example, we could repeatedly present three concepts to ChatGPT and ask it to select the 'least-similar' from the group. Levels of ChatGPT agreement with Wikispeedia-derived scores would be another approach to measuring LLM's ability to think like humans.
 
