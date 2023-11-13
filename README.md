@@ -51,6 +51,8 @@ suggest a 'zoom-in zoom-out' strategy under this framework). A stronger version 
 charts at the identity-pair level, matching pairs inter-identity, taking the geographic difference between the human and LLM average hub degree curves, and performing a t-test for 
 difference from 0 on the average of these differences.  
 
+If Falcon 7B engages in cycles - meaning it navigates to pages previously seen in its page path - we can remove intermediary pages and treat such cycles as the equivalent of a 'backtrack'. We can then 
+
 - Does Falcon 7B pursue page-paths that are sensical to human researchers?
 - Can Falcon 7B explain its Wikispeedia decisions in a way that is sensical to human researchers?
 - How often does Falcon 7B 'backtrack' compared to humans?
