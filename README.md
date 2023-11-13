@@ -17,7 +17,7 @@ In the context of Wikispeedia:
 - Does Falcon 7B pursue page-paths that are sensical to human researchers?
 - Can Falcon 7B explain its Wikispeedia decisions in a way that is sensical to human researchers?
 - Does Falcon 7B employ the same 'zoom-out' to hub, 'zoom-in' to spoke Wikispeedia strategy as humans?
-- How does Falcon 7B's rounds-to-target compare to human players?
+- How does Falcon 7B's rounds-to-goal compare to human players?
 - To what extent does Falcon 7B's strategy and performance change over successive games with the same origin-goal pair?
 - How often does Falcon 7B 'backtrack' compared to humans?
 
@@ -25,7 +25,10 @@ In the context of Wikispeedia:
    
 The primary external dataset for this project will be composed of the paths Falcon 7B selects when presented with the Wikispeedia game. 
 This data will be developed using a stable, curated prompt deployed iteratively via a HuggingFace Transformers API in Python and Google Collab.
-Our proposed prompt is: "Which concept is closest to <GOAL_CONCEPT> in the following set: <LINK_1>, <LINK_2>, ..., <LINK_N> ?"
+We will first select a subset of the most popular origin-goal Wikipedia page pairs played by humans (e.g. Asteroids-Vikings). Then, we will deploy
+the following prompt iteratively: "Which concept is closest to <GOAL_CONCEPT> in the following set: <LINK_1>, <LINK_2>, ..., <LINK_N> ?"
+Above, <GOAL_CONCEPT> is the Wikispeedia final page goal and <LINK_i> refers to the ith link among a given Wikispeedia page's N links. <GOAL_CONCEPT> will be stable
+throughout the game. The initial set of <LINK_i>'s will be pulled from the first Wikispedia page, then pulled from the  
 
 5. Methods
    
