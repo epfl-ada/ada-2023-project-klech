@@ -42,7 +42,7 @@ Finally, we expect to have _ games played by Falcon 7B across _ origin-goal pair
 Let 'identity' refer to a player's status as human or LLM and 'pair' refer to a Wikispeedia game's origin-goal Wikipedia page pair.
 
 To compare average rounds-to-goal between Falcon 7B and humans, we can average rounds-to-goal at the identity-pair level, match pairs inter-identity, 
-take the difference between the human and LLM averages, and perform a t-test for difference from 0 on the difference in average pair rounds-to-goal.
+take the difference between the human and LLM averages, and perform a t-test for difference from 0 on the averages of these differences.
 
 
 
