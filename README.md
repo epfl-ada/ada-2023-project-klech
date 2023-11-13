@@ -41,9 +41,19 @@ Finally, we expect to have _ games played by Falcon 7B across _ origin-goal pair
 
 Let 'identity' refer to a player's status as human or LLM and 'pair' refer to a Wikispeedia game's origin-goal Wikipedia page pair.
 
+To determine whether Falcon 7B's page paths are sensical to humans *at scale*, 
 To compare average rounds-to-goal between Falcon 7B and humans, we can average rounds-to-goal at the identity-pair level, match pairs inter-identity, 
 take the difference between the human and LLM averages, and perform a t-test for difference from 0 on the averages of these differences.
 
+
+- Does Falcon 7B pursue page-paths that are sensical to human researchers?
+- Can Falcon 7B explain its Wikispeedia decisions in a way that is sensical to human researchers?
+- Does Falcon 7B employ the same 'zoom-out' to hub, 'zoom-in' to spoke Wikispeedia strategy as humans?
+
+- To what extent does Falcon 7B's strategy and performance change over successive games with the same origin-goal pair?
+- How often does Falcon 7B 'backtrack' compared to humans?
+
+- 
 
 
 
