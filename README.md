@@ -32,7 +32,7 @@ most recent concept (Wikipedia page) selection.
 
 We arrive at this prompt following a development phase evaluating five possibilities. Analysis of these possibilities (and justification of our selection) can be found in _analysisfile_.ipynb.
 
-We select Falcon 7B Instruct as our LLM for its 
+We select Falcon 7B Instruct as our LLM for its . We may add more LLMs to our data provided we have the time.
 
 Finally, we expect to have _ games played by Falcon 7B across _ origin-goal pairs - the _ most popular pairs played by human players - for our final analysis.
 
