@@ -5,11 +5,11 @@ Man vs LLMachine: A Comparison of Human and LLM Wikispeedia Strategy
 2. Abstract
    
 LLMs are trained to interact as humans do, but do they think like humans as well? To answer this question, we will enlist Falcon 7B as a participant in Wikispeedia
-and evaluate its performance across the most popular origin-goal page pairs played by humans. Our analysis will first parse Falcon 7B's decisions for human 'readability' - that is, 
+and evaluate its performance across the most popular origin-goal page pairs previously played by humans. Our analysis will first parse Falcon 7B's decisions for human 'readability' - that is, 
 we will employ word embeddings, TF-IDF vectorization on page content, and auxiliary prompts to determine if we, as humans, can justify Falcon 7B's chosen paths. Next, we
 will compare Falcon 7B's paths to human paths, measuring levels of similarity in navigation decisions, time-to-goal, learning rate, and rates of 'course correction', thereby
-gauging how closely Falcon 7B emulates human strategization. Given the extension of Wikispeedia to the domain of human information organization, these results will also
-measure how effectively ChatGPT can emulate human semantic relations. 
+gauging how closely Falcon 7B emulates human strategization and ex-ante semantic mapping. Finally, we will ask Falcon 7B to evaluate semantic concept distances based on 
+the original Wikispeedia-derived semantic scores, determing whether it is in agreement with humans' ex-post semantic mappings.
 
 3. Research Questions
    
