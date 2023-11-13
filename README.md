@@ -23,17 +23,19 @@ In the context of Wikispeedia:
 
 4. Proposed Additional Datasets
    
-The only external dataset for this project will be composed of the paths Falcon 7B selects when participating in the Wikispeedia game. 
-This data will be developed using a stable, curated prompt deployed iteratively via a HuggingFace Transformers API in Python and Google Collab.
+The only external dataset will be composed of the paths Falcon 7B selects when participating in the Wikispeedia game. 
+This data will be developed using a stable, curated prompt deployed iteratively to Falcon 7B via a HuggingFace Transformers API in Python and Google Collab.
 We will first select a subset of the most popular origin-goal Wikipedia page pairs played by humans (e.g. Asteroids-Vikings). Then, we will deploy
 the following prompt iteratively: "Which concept is closest to <GOAL_CONCEPT> in the following set: <LINK_1>, <LINK_2>, ..., <LINK_N> ?"
-Above, <GOAL_CONCEPT> is the final page goal and <LINK_i> refers to the ith link among a given Wikispeedia page's N links. <GOAL_CONCEPT> will be stable
-throughout the game. In a given game, the initial set of <LINK_i>s will be pulled from the starting Wikipedia page, while each subsequent turn's set will be 
-pulled from Falcon 7B's most recent concept selection.
+Above, <GOAL_CONCEPT> is the final page goal and <LINK_i> refers to the ith link among a given Wikispeedia page's N links. In a given game, <GOAL_CONCEPT> will be stable,
+the initial <LINK_i> set will be pulled from the starting Wikipedia page for an origin-goal pair, and each subsequent turn's <LINK-i> set will be pulled from Falcon 7B's 
+most recent concept (Wikipedia page) selection.
 
-We select this prompt following a development phase involving five possibilities. Analysis justifying this decision can be found in _analysisfile_.ipynb.
+We arrive at this prompt following a development phase evaluating five possibilities. Analysis of these possibilities (and justification of our selection) can be found in _analysisfile_.ipynb.
 
 We select Falcon 7B Instruct as our LLM for its 
+
+Finally, we expect to have _ games played by Falcon 7B across _ origin-goal pairs - the _ most popular pairs played by human players - for our final analysis.
 
 5. Methods
 
