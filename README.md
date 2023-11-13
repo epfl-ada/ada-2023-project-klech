@@ -36,22 +36,26 @@ We select this prompt following a development phase involving five possibilities
 We select Falcon 7B Instruct as our LLM for its 
 
 5. Methods
-   
+
+Let 'identity' refer to a player's status as human or LLM and 'pair' refer to a Wikispeedia game's origin-goal Wikipedia page pair.
+
+To compare average rounds-to-goal between Falcon 7B and humans, we can average rounds-to-goal at the identity-pair level, match pairs inter-identity, 
+take the difference between the human and LLM averages, and perform a t-test for difference from 0 on the difference in average pair rounds-to-goal.
+
+
+
+
 TF-IDF vectorization
 Word Embeddings
 Wikispeedia-derived semantic scores
 OpenAI API
 ?
 
-6. Proposed Timeline
+7. Proposed Timeline
 ?
 
-7. Organization within the team
+8. Organization within the team
 ?
-
-9. Questions for TAs (optional)
-One possibility for extending the scope of the project (or even course correct if ChatGPT fails to provide sensible Wikispeedia paths) would be to obtain the human-derived semantic scores from Wikispeedia and evaluate ChatGPT's level of agreement. 
-For example, we could repeatedly present three concepts to ChatGPT and ask it to select the 'least-similar' from the group. Levels of ChatGPT agreement with Wikispeedia-derived scores would be another approach to measuring LLM's ability to think like humans.
 
 ------------------
 
