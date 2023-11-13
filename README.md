@@ -28,7 +28,8 @@ This data will be developed using a stable, curated prompt deployed iteratively 
 We will first select a subset of the most popular origin-goal Wikipedia page pairs played by humans (e.g. Asteroids-Vikings). Then, we will deploy
 the following prompt iteratively: "Which concept is closest to <GOAL_CONCEPT> in the following set: <LINK_1>, <LINK_2>, ..., <LINK_N> ?"
 Above, <GOAL_CONCEPT> is the Wikispeedia final page goal and <LINK_i> refers to the ith link among a given Wikispeedia page's N links. <GOAL_CONCEPT> will be stable
-throughout the game. The initial set of <LINK_i>'s will be pulled from the first Wikispedia page, then pulled from the  
+throughout the game. The initial set of <LINK_i>'s will be pulled from the origin Wikispedia page. Subsequent sets will be pulled from the concepts (Wiki pages) Wikispeedia
+ selects.
 
 5. Methods
    
