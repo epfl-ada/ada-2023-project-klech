@@ -53,13 +53,10 @@ difference from 0 on the average of these differences.
 
 If Falcon 7B engages in cycles - meaning it navigates to pages previously seen in its page path - we can remove intermediary pages and treat such cycles as the equivalent of a 'backtrack'. We can then 
 
-- Does Falcon 7B pursue page-paths that are sensical to human researchers?
 - Can Falcon 7B explain its Wikispeedia decisions in a way that is sensical to human researchers?
-
-TF-IDF vectorization
-Word Embeddings
-Wikispeedia-derived semantic scores
-OpenAI API
+TF-IDF vectorization, 
+Word Embeddings, 
+Wikispeedia-derived semantic scores, 
 ?
 
 7. Proposed Timeline
