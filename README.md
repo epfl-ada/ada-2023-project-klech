@@ -55,8 +55,6 @@ If Falcon 7B engages in cycles - meaning it navigates to pages previously seen i
 
 - Does Falcon 7B pursue page-paths that are sensical to human researchers?
 - Can Falcon 7B explain its Wikispeedia decisions in a way that is sensical to human researchers?
-- How often does Falcon 7B 'backtrack' compared to humans?
-
 
 TF-IDF vectorization
 Word Embeddings
