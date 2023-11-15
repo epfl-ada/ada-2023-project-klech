@@ -1,0 +1,16 @@
+Let's play a game. In each prompt, you'll get a set of words. You will choose the word closest to 'World_War_I' until you find a list that contains 'World_War_I'. Do you understand?
+ChatGPT
+Absolutely, let's dive in! Please provide the first set of words, and I'll choose the word closest to 'World_War_I'.
+
+User
+['Adolf_Hitler', 'Aircraft', 'Aircraft_carrier', 'Albania', 'Antwerp', 'Armia_Krajowa', 'Attack_on_Pearl_Harbor', 'Austria', 'Baltic_Sea', 'Battle_of_Britain', 'Battle_of_Leyte_Gulf', 'Battle_of_Midway', 'Battle_of_Moscow', 'Battle_of_Normandy', 'Battle_of_Stalingrad', 'Battle_of_the_Bulge', 'Beijing', 'Belgium', 'Benito_Mussolini', 'Blitzkrieg', 'British_Empire', 'Bucharest', 'Bulgaria', 'Canada', 'China', 'Cold_War', 'Communism', 'Damascus', 'Denmark', 'Egypt', 'Election', 'English_Channel', 'Enigma_machine', 'Erwin_Rommel', 'Estonia', 'Europe', 'Finland', 'Flanders', 'France', 'Franklin_D._Roosevelt', 'Germany', 'Gibraltar', 'Great_Britain', 'Guam', 'Harry_S._Truman', 'Hirohito', 'Ho_Chi_Minh_City', 'Hong_Kong', 'Hungary', 'Imperial_Japanese_Navy', 'India', 'Iraq', 'Israel', 'Japan', 'Japanese_war_crimes', 'Jet_engine', 'Jew', 'Joseph_Stalin', 'Korea', 'Latvia', 'League_of_Nations', 'Lebanon', 'Libya', 'Lithuania', 'Luftwaffe', 'Luxembourg', 'Malta', 'Mao_Zedong', 'Marshall_Islands', 'Marshall_Plan', 'Milan', 'Montevideo', 'Moscow', 'Myanmar', 'Naval_Battle_of_Guadalcanal', 'Nazi_Germany', 'Nazism', 'Netherlands', 'New_Zealand', 'North_Africa', 'North_Korea', 'Norway', 'Nuclear_weapon', 'Pakistan', 'Paris', "People's_Republic_of_China", 'Philippines', 'Poland', 'Prime_Minister_of_the_United_Kingdom', 'Radar', 'Republic_of_China', 'Rhine', 'Romania', 'Rome', 'Royal_Air_Force', 'Royal_Navy', 'San_Francisco,_California', 'Singapore', 'Slavery', 'Solomon_Islands', 'Soviet_Union', 'Suez_Canal', 'Supermarine_Spitfire', 'Syria', 'Taiwan', 'Tank', 'The_Blitz', 'The_Holocaust', 'Treaty_of_Versailles', 'Tunisia', 'United_Kingdom', 'United_Nations', 'United_States', 'United_States_Congress', 'Vietnam', 'War', 'Warsaw', 'Winston_Churchill', 'Yugoslavia']
+ChatGPT
+The word closest to 'World_War_I' in this set is "Treaty_of_Versailles".
+
+User
+['Adolf_Hitler', 'Austria', 'Belgium', 'China', 'Denmark', 'France', 'John_Maynard_Keynes', 'League_of_Nations', 'Lithuania', 'Nazi_Germany', 'Poland', 'Warsaw', 'Weimar_Republic', 'Woodrow_Wilson', 'World_War_I', 'World_War_II']
+ChatGPT
+The word "World_War_I" is already in this set.
+
+--
+
