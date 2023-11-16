@@ -1,6 +1,8 @@
 # Man vs LLMachine: A Comparison of Human and LLM Wikispeedia Strategy
    
-*Klech: Ernesto Bocini (359541), Lorenzo Drudi (367980), Kaede Johnson (357472), Hanwen Zhang (370374), Xingyue Zhang (351693)*
+*Klech:* 
+
+Ernesto Bocini (359541), Lorenzo Drudi (367980), Kaede Johnson (357472), Hanwen Zhang (370374), Xingyue Zhang (351693)
 
 ## Abstract
    
