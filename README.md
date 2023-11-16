@@ -30,7 +30,7 @@ To have ChatGPT 'play' these game pairs, we will deploy the following prompt ite
 
 Above, <GOAL_CONCEPT> is the final page goal and <LINK_i> refers to the ith link among a given Wikispeedia page's N links. In a given game, <GOAL_CONCEPT> will be stable,
 the initial <LINK_i> set will be pulled from the starting Wikipedia page for an origin-goal pair, and each subsequent turn's <LINK_i> set will be pulled from ChatGPT's 
-most recent concept (Wikipedia page) selection.
+most recent concept (Wikipedia page) selection. To prevent infinite loops, we blacklist a concept (disallow it from appearing in all of a given game's future prompts) if ChatGPT navigates to it more than once.
 
 We arrive at ChatGPT online and this prompt following a development phase evaluating other possibilities. Analysis of these possibilities (and justification of our selection) can be found in _analysisfile_.ipynb.
 
