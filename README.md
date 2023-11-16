@@ -106,3 +106,17 @@ Friday, December 22
 - Milestone 3 deadline
 
 ## Organization within the team
+
+Game pair assignment (30 ChatGPT paths each):
+a-b, c-d: Ernesto
+e-f, g-h: Lorenzo
+i-j, k-l: Kaede
+m-n, o-p: Hanwen
+q-r, s-t: Xingyue
+
+Pre-process GPT game paths: Ernesto, Lorenzo
+Analysis pipeline: Cara, Kaede, Hanwen
+Website development: Lorenzo, Xingyue
+Data Story Visualizations: Ernesto, Hanwen
+Data Story and README Text: Kaede 
+Overview of notebook code: Lorenzo
