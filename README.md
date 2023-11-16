@@ -4,37 +4,37 @@ Man vs LLMachine: A Comparison of Human and LLM Wikispeedia Strategy
 
 2. Abstract
    
-LLMs are trained to interact as humans do, but do they think like humans as well? To answer this question, we will enlist Falcon 7B as a participant in Wikispeedia
-and evaluate its performance across the most popular origin-goal page pairs previously played by humans. Our analysis will first parse Falcon 7B's decisions for human 'readability' - that is, 
-we will employ word embeddings, TF-IDF vectorization on page content, and auxiliary prompts to determine if we, as humans, can justify Falcon 7B's chosen paths. Next, we
-will compare Falcon 7B's paths to human paths, measuring levels of similarity in navigation decisions, time-to-goal, learning rate, and rates of 'course correction', thereby
-gauging how closely Falcon 7B emulates human strategization and ex-ante semantic mapping. Finally, we will ask Falcon 7B to evaluate semantic concept distances based on 
-the original Wikispeedia-derived semantic scores, determing whether it is in agreement with humans' ex-post semantic mappings.
+LLMs are trained to interact as humans do, but do they think like humans as well? More specifically, can an LLM emulate through behavior the same thinking underpinning human semantic maps? 
+To answer this question, we will enlist ChatGPT as a participant in Wikispeedia and evaluate its performance across a subset of popular but meaningfully diverse origin-goal page pairs previously played by humans. 
+Our analysis will first parse ChatGPT's decisions for human 'readability' - that is, we will employ BART embeddings, TF-IDF vectorization on page content, and auxiliary prompts to determine if we, as humans, can justify ChatGPT's chosen paths. 
+Next, we will compare ChatGPT's paths to human paths, measuring levels of similarity in rounds-to-goal, 'zoom-in' / 'zoom-out', and rates of 'course correction', thereby quantifying ChatGPT's proximity to human strategization and ex-ante semantic mapping. 
+Finally, we will employ ChatGPT to evaluate semantic concept distances based on human-derived Wikispeedia semantic scores, quantifying its level of ex-post agreement with humans semantic mapping.
 
 3. Research Questions
    
 In the context of Wikispeedia:
-- Does Falcon 7B pursue page-paths that are sensical to human researchers?
-- Can Falcon 7B explain its Wikispeedia decisions in a way that is sensical to human researchers?
-- Does Falcon 7B employ the same 'zoom-out' to hub, 'zoom-in' to spoke Wikispeedia strategy as humans?
-- How does Falcon 7B's rounds-to-goal compare to human players?
-- How often does Falcon 7B 'backtrack' compared to humans?
+- Does ChatGPT pursue page-paths that are sensical to human researchers?
+- Is the answer to the previous question robust across Wikispeedia games related to different semantic concepts or of varying difficulty (as measured by average human rounds-to-goal)?
+- Does ChatGPT employ the same 'zoom-out' to hub, 'zoom-in' to spoke Wikispeedia strategy as humans?
+- How does ChatGPT's rounds-to-goal compare to human players?
+- How often does ChatGPT 'backtrack' compared to humans?
 
 4. Proposed Additional Datasets
    
-The only external dataset will be composed of the paths Falcon 7B selects when participating in the Wikispeedia game. 
-This data will be developed using a stable, curated prompt deployed iteratively to Falcon 7B via a HuggingFace Transformers API in Python and Google Collab.
-We will first select a subset of the most popular origin-goal Wikipedia page pairs played by humans (e.g. Asteroids-Vikings). Then, we will deploy
-the following prompt iteratively: "Which concept is closest to <GOAL_CONCEPT> in the following set: <LINK_1>, <LINK_2>, ..., <LINK_N> ?"
+The chief external dataset will be composed of the paths ChatGPT selects when participating in the Wikispeedia game. 
+This data will be developed using a stable, curated prompt deployed iteratively and manually to chat.openai.com.
+We have sampled a subset of popular origin-goal Wikipedia page pairs played by humans (e.g. Asteroids-Vikings) while ensuring variation in average (human) rounds-to-goal, game completion rates, and topic category. 
+To have ChatGPT 'play' these game pairs, we will deploy the following prompt iteratively: 
+
+"Which concept is closest to <GOAL_CONCEPT> in the following set: <LINK_1>, <LINK_2>, ..., <LINK_N> ?"
+
 Above, <GOAL_CONCEPT> is the final page goal and <LINK_i> refers to the ith link among a given Wikispeedia page's N links. In a given game, <GOAL_CONCEPT> will be stable,
-the initial <LINK_i> set will be pulled from the starting Wikipedia page for an origin-goal pair, and each subsequent turn's <LINK-i> set will be pulled from Falcon 7B's 
+the initial <LINK_i> set will be pulled from the starting Wikipedia page for an origin-goal pair, and each subsequent turn's <LINK_i> set will be pulled from ChatGPT's 
 most recent concept (Wikipedia page) selection.
 
-We arrive at this prompt following a development phase evaluating five possibilities. Analysis of these possibilities (and justification of our selection) can be found in _analysisfile_.ipynb.
+We arrive at ChatGPT online and this prompt following a development phase evaluating other possibilities. Analysis of these possibilities (and justification of our selection) can be found in _analysisfile_.ipynb.
 
-We select Falcon 7B Instruct as our LLM for its . We may add more LLMs to our data provided we have the time.
-
-Finally, we expect to have _ games played by Falcon 7B across _ origin-goal pairs - the _ most popular pairs played by human players - for our final analysis.
+Finally, we expect to have 300 games played by ChatGPT across 10 origin-goal pairs in our final analysis.
 
 5. Methods
 
