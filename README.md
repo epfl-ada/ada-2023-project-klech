@@ -14,7 +14,7 @@ Finally, we will employ ChatGPT to evaluate semantic concept distances based on 
    
 In the context of Wikispeedia:
 - Does ChatGPT pursue page-paths that are sensical to human researchers?
-- Is the answer to the previous question robust across Wikispeedia games related to different semantic concepts or of varying difficulty (as measured by average human rounds-to-goal)?
+- Is the answer to the previous question robust across Wikispeedia games related to different semantic categories or of varying difficulty (as measured by average human rounds-to-goal)?
 - How does ChatGPT's rounds-to-goal compare to human players?
 - Does ChatGPT employ the same 'zoom-out' to hub, 'zoom-in' to spoke Wikispeedia strategy as humans?
 - How often does ChatGPT 'backtrack' compared to humans?
