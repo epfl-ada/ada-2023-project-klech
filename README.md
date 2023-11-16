@@ -67,7 +67,7 @@ Friday, November 17
 Tuesday, November 21
 - 150 ChatGPT Wikispeedia paths collected
 
---
+----
 
 Thursday, November 23
 - Complete analysis pipeline implemented for human data
