@@ -86,7 +86,7 @@ Thursday, December 7
 --
 
 Tuesday, December 12
-- Visualizations + conceive of further analysis based on unexpected ChatGPT behavior
+- Visualizations + conceive of further analysis based on unanticipated ChatGPT behavior
 
 Thursday, December 14
 - Analysis of game paths complete
