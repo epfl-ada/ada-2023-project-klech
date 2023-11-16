@@ -1,4 +1,4 @@
-1. Title
+# Title
    
 Man vs LLMachine: A Comparison of Human and LLM Wikispeedia Strategy
 
