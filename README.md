@@ -114,6 +114,7 @@ Game pair assignments (30 ChatGPT paths per pair):
 - m-n, o-p: Hanwen
 - q-r, s-t: Xingyue
 
+General Tasks:
 - Pre-process GPT game paths: Ernesto, Lorenzo
 - Analysis pipeline: Kaede, Hanwen, Xingyue
 - Website development: Lorenzo, Xingyue
