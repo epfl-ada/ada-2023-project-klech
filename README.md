@@ -105,6 +105,4 @@ Thursday, December 21
 Friday, December 22
 - Milestone 3 deadline
 
-------------------
-
-9. Organization within the team
+## Organization within the team
