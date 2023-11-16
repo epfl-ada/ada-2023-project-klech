@@ -40,13 +40,13 @@ Finally, we expect to have 300 games played by ChatGPT across 10 origin-goal pai
 
 Let 'identity' refer to a player's status as human or LLM and 'pair' refer to a Wikispeedia game's origin-goal Wikipedia page pair.
 
-To determine whether Falcon 7B's page paths are sensical to humans *at scale*, we can retain Falcon 7B Wikispeedia data, plot the average embedding-based distance to goal and to subsequent concept 
+To determine whether ChatGPT's page paths are sensical to humans *at scale*, we can retain ChatGPT Wikispeedia data, plot the average BART embedding-based distance to goal and to subsequent concept 
 along page paths at the pair level, and calculate the proportion of games for which these average distances strictly decrease throughout game. We can supplement these results with similar analysis
-using cosine distance between Wikipedia page TF-IDF vectorizations and human-game Wikispeedia derived semantic distances. Non-decreasing curves intra-game would, under any of the distance metrics
+using cosine distance between Wikipedia page TF-IDF vectorizations and human-game Wikispeedia derived semantic distances. Non-increasing curves intra-game would, under any of the distance metrics
 mentioned above, amount to 'readably rational' decisionmaking.
 
-To compare average rounds-to-goal between Falcon 7B and humans, we can average rounds-to-goal at the identity-pair level, match pairs inter-identity, 
-take the difference between the human and LLM averages, and perform a t-test for difference from 0 on the averages of these differences.
+To compare average rounds-to-goal between ChatGPT and humans, we can average rounds-to-goal at the identity-pair level (e.g. ChatGPT games for the pair Asteroid-Viking receives one average), match pairs inter-identity, 
+take the difference between the human and LLM averages, and perform a t-test for difference from 0 on the averages of these differences. Separately, we can create a cumulative view of the proportion of games completed by round n at the identity-pair level and compare the cumulative distributions inter-identity. 
 
 To determine whether Falcon 7B employs the same 'zoom-out' to hub, 'zoom-in' to spoke strategy as humans, we can retain Falcon 7B Wikispeedia data, calculate average 
 concept degree (# of Wikipedia page links) over time at the pair level, fit pairs to a quadratic model, and perform goodness of fit tests (a concave quadratic curve would
