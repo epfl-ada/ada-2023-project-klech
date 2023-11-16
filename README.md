@@ -2,6 +2,8 @@
    
 Man vs LLMachine: A Comparison of Human and LLM Wikispeedia Strategy
 
+------------------
+
 2. Abstract
    
 LLMs are trained to interact as humans do, but do they think like humans as well? More specifically, can an LLM emulate through behavior the same thinking underpinning human semantic maps? 
@@ -9,6 +11,8 @@ To answer this question, we will enlist ChatGPT as a participant in Wikispeedia 
 Our analysis will first parse ChatGPT's decisions for human 'readability' - that is, we will employ BART embeddings, TF-IDF vectorization on page content, and auxiliary prompts to determine if we, as humans, can justify ChatGPT's chosen paths. 
 Next, we will compare ChatGPT's paths to human paths, measuring levels of similarity in rounds-to-goal, 'zoom-in' / 'zoom-out', and rates of 'course correction', thereby quantifying ChatGPT's proximity to human strategization and ex-ante semantic mapping. 
 Finally, we will employ ChatGPT to evaluate semantic concept distances based on human-derived Wikispeedia semantic scores, quantifying its level of ex-post agreement with humans semantic mapping.
+
+------------------
 
 3. Research Questions
    
@@ -18,6 +22,8 @@ In the context of Wikispeedia:
 - How does ChatGPT's rounds-to-goal compare to human players?
 - Does ChatGPT employ the same 'zoom-out' to hub, 'zoom-in' to spoke Wikispeedia strategy as humans?
 - How often does ChatGPT 'backtrack' compared to humans?
+
+------------------
 
 4. Proposed Additional Datasets
    
@@ -35,6 +41,8 @@ most recent concept (Wikipedia page) selection.
 We arrive at ChatGPT online and this prompt following a development phase evaluating other possibilities. Analysis of these possibilities (and justification of our selection) can be found in _analysisfile_.ipynb.
 
 Finally, we expect to have 300 games played by ChatGPT across 10 origin-goal pairs in our final analysis (30 per pair).
+
+------------------
 
 5. Methods
 
@@ -55,40 +63,59 @@ Given ChatGPT's propensity to engage in cycles - meaning it navigates to pages p
 
 Finally, our method for isolating 10 game pairs with sufficient variation involved standardizing selection variables (average rounds-to-goal, percentage of games completed, maximum page degree along game path) and finding (via a loop that terminates upon convergence) a sample that effectively maximizes the sum of selection variable sample variance **while also** yielding at least five distinct Wikipedia topic categories across pairs' goals.
 
-7. Proposed Timeline
-
 ------------------
+
+7. Proposed Timeline
 
 Friday, November 17
 - Milestone 2 deadline
 - Subset of topics, LLM, prompt structure selected
 - Baseline analysis pipeline implemented for human data
 
----
+--
 
 Tuesday, November 21
 - 150 ChatGPT Wikispeedia paths collected
 
-
-
 Thursday, November 23
 - Complete analysis pipeline implemented for human data
 
+--
+
 Friday, December 1
 - Homework 2 deadline
-------------------
-5.12.23: 300 ChatGPT Wikispeedia paths collected
-7.12.23: ChatGPT Wikispeedia data patched into analysis pipeline; quantitative comparisons calculated
-------------------
-12.12.23: Visualizations, conceive of further analysis based on unexpected ChatGPT behavior
-14.12.23: Analysis of game paths complete
-16.12.23: (Optional) Prompt ChatGPT to evaluate human-derived semantic scores
-------------------
-19.12.23: Data Story rough draft
-21.12.23: Finalize data story, analysis notebook, and README
-22.12.23: Milestone 3 deadline
-------------------
 
+--
+
+Tuesday, December 5
+- 300 ChatGPT Wikispeedia paths collected
+
+Thursday, December 7
+- ChatGPT Wikispeedia data patched into analysis pipeline; quantitative comparisons calculated
+
+--
+
+Tuesday, December 12
+- Visualizations + conceive of further analysis based on unexpected ChatGPT behavior
+
+Thursday, December 14
+- Analysis of game paths complete
+
+Saturday, December 16
+- (Optional) Prompt ChatGPT to evaluate human-derived semantic scores
+
+--
+
+Tuesday, December 19
+-- Data Story rough draft
+
+Thursday, December 21
+-- Finalize data story, analysis notebook, and README
+
+Friday, December 22
+-- Milestone 3 deadline
+
+------------------
 
 9. Organization within the team
 
