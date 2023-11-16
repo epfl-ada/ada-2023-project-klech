@@ -8,7 +8,7 @@ LLMs are trained to interact as humans do, but do they think like humans as well
 To answer this question, we will enlist ChatGPT as a participant in Wikispeedia and evaluate its performance across a subset of popular but meaningfully diverse origin-goal page pairs previously played by humans. 
 Our analysis will first parse ChatGPT's decisions for human 'readability' - that is, we will employ BART embeddings, TF-IDF vectorization on page content, and auxiliary prompts to determine if we, as humans, can justify ChatGPT's chosen paths. 
 Next, we will compare ChatGPT's paths to human paths, measuring levels of similarity in rounds-to-goal, 'zoom-in' / 'zoom-out', and rates of 'course correction', thereby quantifying ChatGPT's proximity to human strategization and ex-ante semantic mapping. 
-Finally, we will employ ChatGPT to evaluate semantic concept distances based on human-derived Wikispeedia semantic scores, quantifying its level of ex-post agreement with humans semantic mapping.
+Finally, we will employ ChatGPT to evaluate semantic concept distances based on human-derived Wikispeedia semantic scores, quantifying its level of ex-post agreement with human semantic mappings.
 
 ## Research Questions
    
