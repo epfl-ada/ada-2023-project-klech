@@ -107,13 +107,13 @@ Saturday, December 16
 --
 
 Tuesday, December 19
--- Data Story rough draft
+- Data Story rough draft
 
 Thursday, December 21
--- Finalize data story, analysis notebook, and README
+- Finalize data story, analysis notebook, and README
 
 Friday, December 22
--- Milestone 3 deadline
+- Milestone 3 deadline
 
 ------------------
 
