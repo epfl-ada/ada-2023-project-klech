@@ -107,16 +107,16 @@ Friday, December 22
 
 ## Organization within the team
 
-Game pair assignment (30 ChatGPT paths each):
-a-b, c-d: Ernesto
-e-f, g-h: Lorenzo
-i-j, k-l: Kaede
-m-n, o-p: Hanwen
-q-r, s-t: Xingyue
+Game pair assignments (30 ChatGPT paths per pair):
+- a-b, c-d: Ernesto
+- e-f, g-h: Lorenzo
+- i-j, k-l: Kaede
+- m-n, o-p: Hanwen
+- q-r, s-t: Xingyue
 
-Pre-process GPT game paths: Ernesto, Lorenzo
-Analysis pipeline: Cara, Kaede, Hanwen
-Website development: Lorenzo, Xingyue
-Data Story Visualizations: Ernesto, Hanwen
-Data Story and README Text: Kaede 
-Overview of notebook code: Lorenzo
+- Pre-process GPT game paths: Ernesto, Lorenzo
+- Analysis pipeline: Kaede, Hanwen, Xingyue
+- Website development: Lorenzo, Xingyue
+- Data Story Visualizations: Ernesto, Hanwen
+- Data Story and README Text: Kaede 
+- Overview of notebook code: Ernesto, Lorenzo, Hanwen, Xingyue
