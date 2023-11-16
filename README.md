@@ -10,9 +10,7 @@ Our analysis will first parse ChatGPT's decisions for human 'readability' - that
 Next, we will compare ChatGPT's paths to human paths, measuring levels of similarity in rounds-to-goal, 'zoom-in' / 'zoom-out', and rates of 'course correction', thereby quantifying ChatGPT's proximity to human strategization and ex-ante semantic mapping. 
 Finally, we will employ ChatGPT to evaluate semantic concept distances based on human-derived Wikispeedia semantic scores, quantifying its level of ex-post agreement with humans semantic mapping.
 
-------------------
-
-3. Research Questions
+## Research Questions
    
 In the context of Wikispeedia:
 - Does ChatGPT pursue page-paths that are sensical to human researchers?
@@ -21,9 +19,7 @@ In the context of Wikispeedia:
 - Does ChatGPT employ the same 'zoom-out' to hub, 'zoom-in' to spoke Wikispeedia strategy as humans?
 - How often does ChatGPT 'backtrack' compared to humans?
 
-------------------
-
-4. Proposed Additional Datasets
+## Proposed Additional Datasets
    
 The chief external dataset will be composed of the paths ChatGPT selects when participating in the Wikispeedia game. 
 This data will be developed using a stable, curated prompt deployed iteratively and manually to chat.openai.com.
@@ -40,9 +36,7 @@ We arrive at ChatGPT online and this prompt following a development phase evalua
 
 Finally, we expect to have 300 games played by ChatGPT across 10 origin-goal pairs in our final analysis (30 per pair).
 
-------------------
-
-5. Methods
+## Methods
 
 Let 'identity' refer to a player's status as human or LLM and 'pair' refer to a Wikispeedia game's origin-goal Wikipedia page pair.
 
@@ -61,9 +55,7 @@ Given ChatGPT's propensity to engage in cycles - meaning it navigates to pages p
 
 Finally, our method for isolating 10 game pairs with sufficient variation involved standardizing selection variables (average rounds-to-goal, percentage of games completed, maximum page degree along game path) and finding (via a loop that terminates upon convergence) a sample that effectively maximizes the sum of selection variable sample variance **while also** yielding at least five distinct Wikipedia topic categories across pairs' goals.
 
-------------------
-
-7. Proposed Timeline
+## Proposed Timeline
 
 Friday, November 17
 - Milestone 2 deadline
