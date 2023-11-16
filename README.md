@@ -57,18 +57,24 @@ Finally, our method for isolating 10 game pairs with sufficient variation involv
 
 7. Proposed Timeline
 
+------------------
 17.11.23: Milestone 2 deadline: Subset of topics, LLM, prompt structure selected, baseline analysis pipeline implemented for human data
 21.11.23: 150 ChatGPT Wikispeedia paths collected
+------------------
 23.11.23: Complete analysis pipeline implemented for human data
 1.12.23: Homework 2 deadline
+------------------
 5.12.23: 300 ChatGPT Wikispeedia paths collected
 7.12.23: ChatGPT Wikispeedia data patched into analysis pipeline; quantitative comparisons calculated
+------------------
 12.12.23: Visualizations, conceive of further analysis based on unexpected ChatGPT behavior
 14.12.23: Analysis of game paths complete
 16.12.23: (Optional) Prompt ChatGPT to evaluate human-derived semantic scores
+------------------
 19.12.23: Data Story rough draft
 21.12.23: Finalize data story, analysis notebook, and README
 22.12.23: Milestone 3 deadline
+------------------
 
 
 9. Organization within the team
