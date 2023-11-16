@@ -15,7 +15,7 @@ Finally, we will employ ChatGPT to evaluate semantic concept distances based on 
 In the context of Wikispeedia:
 - Does ChatGPT pursue page-paths that are sensical to human researchers?
 - Is the answer to the previous question robust across Wikispeedia games related to different semantic concepts or of varying difficulty (as measured by average human rounds-to-goal)?
-- - How does ChatGPT's rounds-to-goal compare to human players?
+- How does ChatGPT's rounds-to-goal compare to human players?
 - Does ChatGPT employ the same 'zoom-out' to hub, 'zoom-in' to spoke Wikispeedia strategy as humans?
 - How often does ChatGPT 'backtrack' compared to humans?
 
@@ -34,7 +34,7 @@ most recent concept (Wikipedia page) selection.
 
 We arrive at ChatGPT online and this prompt following a development phase evaluating other possibilities. Analysis of these possibilities (and justification of our selection) can be found in _analysisfile_.ipynb.
 
-Finally, we expect to have 300 games played by ChatGPT across 10 origin-goal pairs in our final analysis.
+Finally, we expect to have 300 games played by ChatGPT across 10 origin-goal pairs in our final analysis (30 per pair).
 
 5. Methods
 
@@ -48,13 +48,12 @@ mentioned above, amount to 'readably rational' decisionmaking.
 To compare average rounds-to-goal between ChatGPT and humans, we can average rounds-to-goal at the identity-pair level (e.g. ChatGPT games for the pair Asteroid-Viking receives one average), match pairs inter-identity, 
 take the difference between the human and LLM averages, and perform a t-test for difference from 0 on the averages of these differences. Separately, we can create a cumulative view of the proportion of games completed by round n at the identity-pair level and compare the cumulative distributions inter-identity. 
 
-To determine whether Falcon 7B employs the same 'zoom-out' to hub, 'zoom-in' to spoke strategy as humans, we can retain Falcon 7B Wikispeedia data, calculate average 
-concept degree (# of Wikipedia page links) over time at the pair level, fit pairs to a quadratic model, and perform goodness of fit tests (a concave quadratic curve would
-suggest a 'zoom-in zoom-out' strategy under this framework). A stronger version of this test might test for inequality in human vs. Falcon degree curves by creating the concept degree
-charts at the identity-pair level, matching pairs inter-identity, taking the geographic difference between the human and LLM average hub degree curves, and performing a t-test for 
-difference from 0 on the average of these differences.  
+To determine whether ChatGPT employs the same 'zoom-out' to hub, 'zoom-in' to spoke strategy as humans, we can retain ChatGPT Wikispeedia data, calculate average 
+concept degree (# of outgoing Wikipedia page links) over time at the pair level, fit pair-level data to a quadratic model, and confirm the resultant model is concave (a concave quadratic curve would correspond to a 'zoom-in zoom-out' strategy under this framework). A stronger version of this test might require a given pair's average degrees to exhibit (1) exactly one local maximum that appears in round 2 or later and (2) strictly positive changes in average degree followed by strictly negative changes in average degree. A more direct comparison to human strategy would retain only games of length n for both humans and ChatGPT, chart the evolution of average degree over time for both identities, take the geographic difference between the curves, and perform a t-test for difference from 0 on the average of these differences.  
 
-If Falcon 7B engages in cycles - meaning it navigates to pages previously seen in its page path - we can remove intermediary pages and treat such cycles as the equivalent of a 'backtrack'. We can then 
+Given ChatGPT's propensity to engage in cycles - meaning it navigates to pages previously seen in its page path - we can remove intermediary pages and treat such cycles as the equivalent of a 'backtrack' (meanwhile, 'blacklisting' the concepts ChatGPT visits more than once in a game can prevent infinite cycles). We can then compute the proportion of backtracks that occur nn a given round at the identity-pair level, plot the two identites' curves, and compare proportions with t-tests for each round in a given pair.
+
+Finally, 
 
 7. Proposed Timeline
 
