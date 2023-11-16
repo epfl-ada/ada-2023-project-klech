@@ -1,10 +1,8 @@
-# Title
+# Man vs LLMachine: A Comparison of Human and LLM Wikispeedia Strategy
    
-Man vs LLMachine: A Comparison of Human and LLM Wikispeedia Strategy
+*Klech: Ernesto Bocini (359541), Lorenzo Drudi (367980), Kaede Johnson (357472), Hanwen Zhang (370374), Xingyue Zhang (351693)*
 
-------------------
-
-2. Abstract
+## Abstract
    
 LLMs are trained to interact as humans do, but do they think like humans as well? More specifically, can an LLM emulate through behavior the same thinking underpinning human semantic maps? 
 To answer this question, we will enlist ChatGPT as a participant in Wikispeedia and evaluate its performance across a subset of popular but meaningfully diverse origin-goal page pairs previously played by humans. 
