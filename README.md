@@ -59,16 +59,19 @@ Finally, our method for isolating 10 game pairs with sufficient variation involv
 
 ------------------
 
-17.11.23: 
-- Milestone 2 deadline: Subset of topics, LLM, prompt structure selected
+Friday, November 17
+- Milestone 2 deadline
+- Subset of topics, LLM, prompt structure selected
 - Baseline analysis pipeline implemented for human data
   
-21.11.23: 
+Tuesday, November 21
 - 150 ChatGPT Wikispeedia paths collected
 
-------------------
-23.11.23: Complete analysis pipeline implemented for human data
-1.12.23: Homework 2 deadline
+Thursday, November 23
+- Complete analysis pipeline implemented for human data
+
+Friday, December 1
+- Homework 2 deadline
 ------------------
 5.12.23: 300 ChatGPT Wikispeedia paths collected
 7.12.23: ChatGPT Wikispeedia data patched into analysis pipeline; quantitative comparisons calculated
