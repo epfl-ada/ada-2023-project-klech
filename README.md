@@ -53,7 +53,7 @@ concept degree (# of outgoing Wikipedia page links) over time at the pair level,
 
 Given ChatGPT's propensity to engage in cycles - meaning it navigates to pages previously seen in its page path - we can remove intermediary pages and treat such cycles as the equivalent of a 'backtrack' (meanwhile, 'blacklisting' the concepts ChatGPT visits more than once in a game can prevent infinite cycles). We can then compute the proportion of backtracks that occur nn a given round at the identity-pair level, plot the two identites' curves, and compare proportions with t-tests for each round in a given pair.
 
-Finally, 
+Finally, our method for isolating 10 game pairs with sufficient variation involved standardizing selection variables (average rounds-to-goal, percentage of games completed, maximum page degree along game path) and finding (via a loop that terminates upon convergence) a sample that maximizes or nearly maximizes the sum of selection variable sample variance while also representing at least five distinct topic categories across pair goals.  
 
 7. Proposed Timeline
 
