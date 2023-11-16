@@ -63,11 +63,13 @@ Friday, November 17
 - Milestone 2 deadline
 - Subset of topics, LLM, prompt structure selected
 - Baseline analysis pipeline implemented for human data
-  
+
+---
+
 Tuesday, November 21
 - 150 ChatGPT Wikispeedia paths collected
 
-----
+
 
 Thursday, November 23
 - Complete analysis pipeline implemented for human data
