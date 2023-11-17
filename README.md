@@ -36,7 +36,7 @@ most recent concept (Wikipedia page) selection. To prevent infinite loops, we bl
 
 We arrive at ChatGPT online and this prompt following a development phase evaluating other possibilities. Analysis of these possibilities (and justification of our selection) can be found in _analysisfile_.ipynb.
 
-Finally, we expect to have 300 games played by ChatGPT across 10 origin-goal pairs in our final analysis (30 per pair).
+Finally, we expect to have 300 games played by ChatGPT across 10 origin-goal pairs in our final analysis (30 per pair). All 10 pairs are in the 'Organization within the team' section below.
 
 ## Methods
 
@@ -55,7 +55,7 @@ concept degree (# of outgoing Wikipedia page links) over time at the pair level,
 
 Given ChatGPT's propensity to engage in cycles - meaning it navigates to pages previously seen in its page path - we can remove intermediary pages and treat such cycles as the equivalent of a 'backtrack' (meanwhile, 'blacklisting' the concepts ChatGPT visits more than once in a game can prevent infinite cycles). We can then compute the proportion of backtracks that occur in a given round at the identity-pair level, plot the two identites' curves, and compare proportions with t-tests for each round in a given pair.
 
-Finally, our method for isolating 10 game pairs with sufficient variation involved standardizing selection variables (average rounds-to-goal, percentage of games completed, maximum page degree along game path) and finding (via a loop that terminates upon convergence) a sample that effectively maximizes the sum of selection variable sample variance **while also** yielding at least five distinct Wikipedia topic categories across pairs' goals.
+Finally, our method for isolating 10 game pairs with sufficient variation involved retaining game pairs played 25 times or more by humans, standardizing selection variables (average rounds-to-goal, percentage of games with backtracking, maximum page degree along game path) and finding (via a loop that terminates upon convergence) a sample that effectively maximizes the sum of standardized selection variable standard errors **while also** yielding at least five distinct Wikipedia topic categories across pairs' goals.
 
 ## Proposed Timeline
 
@@ -110,11 +110,11 @@ Friday, December 22
 ## Organization within the team
 
 Game pair assignments (30 ChatGPT paths per pair):
-- a-b, c-d: Ernesto
-- e-f, g-h: Lorenzo
-- i-j, k-l: Kaede
-- m-n, o-p: Hanwen
-- q-r, s-t: Xingyue
+- 14th_century->Rainbow, Bird->Adolf_Hitler: Ernesto
+- Batman->Coconut_crab, Africa->England: Lorenzo
+- George_W._Bush->Monkey, Antlion->Hip_hop_usic: Kaede
+- Aircraft->Google, Jesus->God: Hanwen
+- Computer->Fruit, Jew->Telephone: Xingyue
 
 General Tasks:
 - Pre-process GPT game paths: Ernesto, Lorenzo
