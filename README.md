@@ -35,7 +35,7 @@ We then engage a chain of thought with 2-shot learning by providing two Wikispee
 
 Available options: < Afghanistan, ... , United_States, ..., Yugoslavia >
 
-My answer is: 'United_States' , because George Washington is in the list and he was the first president of United States."
+My answer is: 'United_States' , because George Washington is in not the list and he was the first president of United States."
 
 Finally, we launch ChatGPT's game by providing a target and set of available options, and proceed according to its responses.
 
