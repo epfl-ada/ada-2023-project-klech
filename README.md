@@ -28,6 +28,8 @@ This data will be developed using a stable, curated prompt deployed iteratively 
 We have sampled a subset of popular origin-goal Wikipedia page pairs played by humans (e.g. Africa-England) while ensuring variation in average (human) rounds-to-goal, game backtrack rates, and topic category. 
 To have ChatGPT 'play' these game pairs, we first deploy this introductory prompt: 
 
+[link to the prompt](https://chat.openai.com/share/c8d49c5d-1725-4e67-a688-a58b00895cd9)
+
 
 
 We arrive at ChatGPT online and this prompt following a development phase evaluating other possibilities. Analysis of these possibilities (and justification of our selection) can be found in analysis.ipynb.
