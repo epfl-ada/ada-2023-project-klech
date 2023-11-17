@@ -112,7 +112,7 @@ Friday, December 22
 Game pair assignments (30 ChatGPT paths per pair):
 - 14th_century->Rainbow, Bird->Adolf_Hitler: Ernesto
 - Batman->Coconut_crab, Africa->England: Lorenzo
-- George_W._Bush->Monkey, Antlion->Hip_hop_usic: Kaede
+- George_W._Bush->Monkey, Antlion->Hip_hop_Music: Kaede
 - Aircraft->Google, Jesus->God: Hanwen
 - Computer->Fruit, Jew->Telephone: Xingyue
 
