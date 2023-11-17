@@ -39,7 +39,7 @@ My answer is: 'United_States' , because George Washington is not in the list and
 
 Finally, we launch ChatGPT's game by providing a target and set of available options, and proceed according to its responses.
 
-You can find a complete ChatGPT Wikispeedia game developed from our prompts [here](https://chat.openai.com/share/a9660e09-f7c6-4b78-907d-219684d73b99).
+You can find a complete ChatGPT Wikispeedia game developed from our prompts [here](https://chat.openai.com/share/f14b657e-0d77-47a3-8ea5-9df58c41e39d).
 
 We arrive at ChatGPT online and this prompt following a development phase evaluating other possibilities. Analysis of these possibilities (and justification of our selection) can be found in analysis.ipynb.
 
