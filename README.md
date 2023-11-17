@@ -6,7 +6,7 @@ Ernesto Bocini (359541), Lorenzo Drudi (367980), Kaede Johnson (357472), Hanwen 
 
 ## Abstract
    
-LLMs are trained to interact as humans do, but do they think like humans as well? More specifically, can an LLM emulate through behavior the same thinking underpinning human semantic maps? 
+LLMs are trained on extremely large corpuses of texts, most of the time written by humans over decades. This makes them able to generate human-like sentences and reply to questions in a sound way - but do they *think* about semantic maps like humans as well? More specifically, can an LLM emulate through behavior the same thinking underpinning human semantic maps? 
 To answer this question, we will enlist ChatGPT as a participant in Wikispeedia and evaluate its performance across a subset of popular but meaningfully diverse origin-goal page pairs previously played by humans. 
 Our analysis will first parse ChatGPT's decisions for human 'readability' - that is, we will employ BART embeddings, TF-IDF vectorization on page content, and auxiliary prompts to determine if we, as humans, can justify ChatGPT's chosen paths. 
 Next, we will compare ChatGPT's paths to human paths, measuring levels of similarity in rounds-to-goal, 'zoom-in' / 'zoom-out', and rates of 'course correction', thereby quantifying ChatGPT's proximity to human strategization and ex-ante semantic mapping. 
@@ -25,7 +25,7 @@ In the context of Wikispeedia:
    
 The chief external dataset will be composed of the paths ChatGPT selects when participating in the Wikispeedia game. 
 This data will be developed using a stable, curated prompt deployed iteratively and manually to chat.openai.com.
-We have sampled a subset of popular origin-goal Wikipedia page pairs played by humans (e.g. Asteroids-Vikings) while ensuring variation in average (human) rounds-to-goal, game completion rates, and topic category. 
+We have sampled a subset of popular origin-goal Wikipedia page pairs played by humans (e.g. Africa-England) while ensuring variation in average (human) rounds-to-goal, game backtrack rates, and topic category. 
 To have ChatGPT 'play' these game pairs, we will deploy the following prompt iteratively: 
 
 "Which concept is closest to <GOAL_CONCEPT> in the following set: <LINK_1>, <LINK_2>, ..., <LINK_N> ?"
@@ -34,7 +34,7 @@ Above, <GOAL_CONCEPT> is the final page goal and <LINK_i> refers to the ith link
 the initial <LINK_i> set will be pulled from the starting Wikipedia page for an origin-goal pair, and each subsequent turn's <LINK_i> set will be pulled from ChatGPT's 
 most recent concept (Wikipedia page) selection. To prevent infinite loops, we blacklist a concept (disallow it from appearing in all of a given game's future prompts) if ChatGPT navigates to it more than once.
 
-We arrive at ChatGPT online and this prompt following a development phase evaluating other possibilities. Analysis of these possibilities (and justification of our selection) can be found in _analysisfile_.ipynb.
+We arrive at ChatGPT online and this prompt following a development phase evaluating other possibilities. Analysis of these possibilities (and justification of our selection) can be found in analysis.ipynb.
 
 Finally, we expect to have 300 games played by ChatGPT across 10 origin-goal pairs in our final analysis (30 per pair). All 10 pairs are in the 'Organization within the team' section below.
 
