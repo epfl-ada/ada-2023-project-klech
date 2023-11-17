@@ -15,7 +15,7 @@ We will then will compare ChatGPT's paths to human paths, measuring levels of si
    
 In the context of Wikispeedia:
 - Does ChatGPT pursue page-paths that are sensical to human researchers?
-- Is the previous quesetion's answer robust across different semantic categories?
+- Is the previous question's answer robust to different semantic categories?
 - How does ChatGPT's rounds-to-goal compare to human players?
 - Does ChatGPT employ the same 'zoom-out' to hub, 'zoom-in' to spoke Wikispeedia strategy as humans?
 - How often does ChatGPT 'backtrack' compared to humans?
