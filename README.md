@@ -1,4 +1,4 @@
-# Man vs LLMachine: A Comparison of Human and LLM Wikispeedia Strategy
+# Man vs AI: A Comparison of Human and LLM Wikispeedia Strategy
    
 *Klech:* 
 
