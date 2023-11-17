@@ -112,6 +112,7 @@ Thursday, December 21
 Friday, December 22
 - Milestone 3 deadline
 
+
 ## Organization within the team
 
 Game pair assignments (30 ChatGPT paths per pair):
