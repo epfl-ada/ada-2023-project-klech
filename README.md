@@ -24,7 +24,7 @@ In the context of Wikispeedia:
    
 The chief external dataset will be composed of the paths ChatGPT selects when participating in the Wikispeedia game. 
 This data will be developed using a stable, curated prompt deployed iteratively and manually to chat.openai.com.
-We have sampled a subset of popular origin-goal Wikipedia page pairs played by humans (e.g. Africa-England) while ensuring variation in average (human) rounds-to-goal, game backtrack rates, and topic category. 
+We have sampled a subset of popular origin-goal Wikipedia page pairs played by humans (e.g. Africa-England) while ensuring variation in average (human) rounds-to-goal, game backtrack rates, and semantic category. 
 To have ChatGPT 'play' these game pairs, we first deploy the following instructions:
 
 "We now play the following game: I will give you a target word and a list from which you can choose an option. If the list contains the target word, you choose it. Otherwise you choose the semantically most similar word. Before starting I will give you an example of how I would solve something similar. Ready?"
