@@ -6,10 +6,10 @@ Ernesto Bocini (359541), Lorenzo Drudi (367980), Kaede Johnson (357472), Hanwen 
 
 ## Abstract
    
-LLMs are trained on extremely large corpuses of texts, most of the time written by humans over decades. This makes them able to generate human-like sentences and reply to questions in a sound way - but do they *think* about semantic maps like humans as well? More specifically, can an LLM emulate through behavior the same thinking underpinning human semantic maps? 
+LLMs are trained on extremely large corpuses of texts, most of the time written by humans over decades. This makes them able to generate human-like sentences and reply to questions in a sound way. But do they *think* like humans as well? More specifically, can an LLM emulate through behavior the same thinking underpinning human semantic maps? 
 To answer this question, we will enlist ChatGPT as a participant in Wikispeedia and evaluate its performance across a subset of popular but meaningfully diverse origin-goal page pairs previously played by humans. 
 Our analysis will first parse ChatGPT's decisions for human 'readability' - that is, we will employ embeddings, TF-IDF vectorization on page content, and Wikispeedia-derived human semantic distances to determine if we, as humans, can justify ChatGPT's chosen paths. 
-Otherwise, we will compare ChatGPT's paths to human paths, measuring levels of similarity in rounds-to-goal, 'zoom-in' / 'zoom-out', and rates of 'course correction', thereby quantifying ChatGPT's proximity to human strategization and ex-ante semantic mapping. 
+We will then will compare ChatGPT's paths to human paths, measuring levels of similarity in rounds-to-goal, 'zoom-in' / 'zoom-out', and rates of 'course correction', thereby quantifying ChatGPT's proximity to human strategization and ex-ante semantic mapping. 
 
 ## Research Questions
    
