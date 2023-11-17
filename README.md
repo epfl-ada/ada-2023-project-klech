@@ -130,4 +130,8 @@ General Tasks:
 - Overview of notebook code: Ernesto, Lorenzo, Hanwen, Xingyue
 
   ## Questions for TA
-  We have one other idea for this project: asking ChatGPT to evaluate semantic concept distances based on human-derived Wikispeedia semantic scores. Basically, we would recreate the semantic distances created in Professor West's paper, and randomly sample sets of three concepts with semantic scores. We would then give all three to ChatGPT and ask it to select the 'odd man out'. Our question is: would this be a worthwhile endeavour as a companion analysis to this research project? It is essentially an ex-post evaluation of human semantic meaning rather than an ex-ante evaluation.
+  We have one other idea for this project: asking ChatGPT to evaluate semantic concept distances based on human-derived Wikispeedia semantic scores. Basically, we would recreate the semantic distances created in Professor West's second paper below, and randomly sample sets of three concepts with semantic scores. We would then give all three to ChatGPT and ask it to select the 'odd man out'. Our question is: would this be a worthwhile endeavour as a companion analysis to this research project? It is essentially an ex-post evaluation of human semantic meaning rather than an ex-ante evaluation.
+
+  ## Bibliography
+  Robert West and Jure Leskovec: Human Wayfinding in Information Networks. 21st International World Wide Web Conference (WWW), 2012.
+  Robert West, Joelle Pineau, and Doina Precup: Wikispeedia: An Online Game for Inferring Semantic Distances between Concepts. 21st International Joint Conference on Artificial Intelligence (IJCAI), 2009.
