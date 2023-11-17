@@ -39,6 +39,8 @@ My answer is: 'United_States' , because George Washington is in the list and he 
 
 Finally, we launch ChatGPT's game by providing a target and set of available options, and proceed according to its responses.
 
+You can find a complete ChatGPT Wikispeedia game using our prompts [here](https://chat.openai.com/share/a9660e09-f7c6-4b78-907d-219684d73b99)
+
 We arrive at ChatGPT online and this prompt following a development phase evaluating other possibilities. Analysis of these possibilities (and justification of our selection) can be found in analysis.ipynb.
 
 Finally, we expect to have 300 games played by ChatGPT across 10 origin-goal pairs in our final analysis (30 per pair). All 10 pairs are in the 'Organization within the team' section below.
@@ -128,5 +130,4 @@ General Tasks:
 - Overview of notebook code: Ernesto, Lorenzo, Hanwen, Xingyue
 
   ## Questions for TA
-  We have one other 
-  Finally, we will employ ChatGPT to evaluate semantic concept distances based on human-derived Wikispeedia semantic scores, quantifying its level of ex-post agreement with human semantic mappings.
+  We have one other idea for this project: asking ChatGPT to evaluate semantic concept distances based on human-derived Wikispeedia semantic scores. Basically, we would recreate the semantic distances created in Professor West's paper, and randomly sample three concepts with semantic scores. We would then give all three to ChatGPT and ask it to select the 'odd man out'. Our question is: would this be a worthwhile endeavour as a companion analysis to this research process? It is essentially an ex-post evaluation of human semantic meaning rather than an ex-ante evaluation.
