@@ -9,14 +9,13 @@ Ernesto Bocini (359541), Lorenzo Drudi (367980), Kaede Johnson (357472), Hanwen 
 LLMs are trained on extremely large corpuses of texts, most of the time written by humans over decades. This makes them able to generate human-like sentences and reply to questions in a sound way - but do they *think* about semantic maps like humans as well? More specifically, can an LLM emulate through behavior the same thinking underpinning human semantic maps? 
 To answer this question, we will enlist ChatGPT as a participant in Wikispeedia and evaluate its performance across a subset of popular but meaningfully diverse origin-goal page pairs previously played by humans. 
 Our analysis will first parse ChatGPT's decisions for human 'readability' - that is, we will employ BART embeddings, TF-IDF vectorization on page content, and auxiliary prompts to determine if we, as humans, can justify ChatGPT's chosen paths. 
-Next, we will compare ChatGPT's paths to human paths, measuring levels of similarity in rounds-to-goal, 'zoom-in' / 'zoom-out', and rates of 'course correction', thereby quantifying ChatGPT's proximity to human strategization and ex-ante semantic mapping. 
-Finally, we will employ ChatGPT to evaluate semantic concept distances based on human-derived Wikispeedia semantic scores, quantifying its level of ex-post agreement with human semantic mappings.
+Otherwise, we will compare ChatGPT's paths to human paths, measuring levels of similarity in rounds-to-goal, 'zoom-in' / 'zoom-out', and rates of 'course correction', thereby quantifying ChatGPT's proximity to human strategization and ex-ante semantic mapping. 
 
 ## Research Questions
    
 In the context of Wikispeedia:
 - Does ChatGPT pursue page-paths that are sensical to human researchers?
-- Is the answer to the previous question robust across Wikispeedia games related to different semantic categories or of varying difficulty (as measured by average human rounds-to-goal)?
+- Is the previous quesetion's answer robust across different semantic categories?
 - How does ChatGPT's rounds-to-goal compare to human players?
 - Does ChatGPT employ the same 'zoom-out' to hub, 'zoom-in' to spoke Wikispeedia strategy as humans?
 - How often does ChatGPT 'backtrack' compared to humans?
@@ -26,11 +25,19 @@ In the context of Wikispeedia:
 The chief external dataset will be composed of the paths ChatGPT selects when participating in the Wikispeedia game. 
 This data will be developed using a stable, curated prompt deployed iteratively and manually to chat.openai.com.
 We have sampled a subset of popular origin-goal Wikipedia page pairs played by humans (e.g. Africa-England) while ensuring variation in average (human) rounds-to-goal, game backtrack rates, and topic category. 
-To have ChatGPT 'play' these game pairs, we first deploy this introductory prompt: 
+To have ChatGPT 'play' these game pairs, we first deploy the following instructions:
 
-[link to the prompt](https://chat.openai.com/share/c8d49c5d-1725-4e67-a688-a58b00895cd9)
+"We now play the following game: I will give you a target word and a list from which you can choose an option. If the list contains the target word, you choose it. Otherwise you choose the semantically most similar word. Before starting I will give you an example of how I would solve something similar. Ready?"
 
+We then engage a chain of thought with 2-shot learning by providing two Wikispeedia round examples. Here is one in condensed form:
 
+"Target word: George_Washington
+
+Available options: < Afghanistan, ... , United_States, ..., Yugoslavia >
+
+My answer is: 'United_States' , because George Washington is in the list and he was the first president of United States."
+
+Finally, we launch ChatGPT's game by providing a target and set of available options, and proceed according to its responses.
 
 We arrive at ChatGPT online and this prompt following a development phase evaluating other possibilities. Analysis of these possibilities (and justification of our selection) can be found in analysis.ipynb.
 
@@ -121,3 +128,6 @@ General Tasks:
 - Data Story Visualizations: Ernesto, Hanwen
 - Data Story and README Text: Kaede 
 - Overview of notebook code: Ernesto, Lorenzo, Hanwen, Xingyue
+
+  ## Questions for TA
+  Finally, we will employ ChatGPT to evaluate semantic concept distances based on human-derived Wikispeedia semantic scores, quantifying its level of ex-post agreement with human semantic mappings.
