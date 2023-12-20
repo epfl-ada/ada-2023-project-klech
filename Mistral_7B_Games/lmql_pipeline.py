@@ -3,11 +3,9 @@ import lmql
 import pandas as pd
 import pickle
 from tqdm import tqdm 
+import os
 
 from helpers import get_links_from_wikipedia_page
-
-import os
-os.environ['TRANSFORMERS_CACHE'] = '/work/upschrimpf1/bocini/cache'
 
 
 df = pd.read_csv('pipeline_dataset.csv') # run Mistral_Game_NB.ipynb for obtaining this 
@@ -27,7 +25,7 @@ for row in tqdm(range(len(df)), desc='GAMES'):
     if GAME not in results:
         results[GAME] = {}
 
-    for i in tqdm(range(10), desc=f'10 repetitions for the game {GAME}'): # repeat every game 10 times
+    for i in tqdm(range(30), desc=f'30 repetitions for the game {GAME}'): # repeat every game 10 times
 
         START = df.origin[row]
         blacklist = set()
