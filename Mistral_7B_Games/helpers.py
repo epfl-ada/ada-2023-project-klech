@@ -3,7 +3,7 @@ import urllib.parse
 import pandas as pd
 
 
-data_dir = './wikispeedia_data/wikispeedia_paths-and-graph/'
+data_dir = '../dependencies/wikispeedia_paths-and-graph/'
 
 # extrapolating the link lists for a given wikipedia page:
 
