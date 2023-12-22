@@ -2,8 +2,14 @@
    
 *Klech:* 
 
-Ernesto Bocini (359541), Lorenzo Drudi (367980), Kaede Johnson (357472), Hanwen Zhang (370374), Xingyue Zhang (351693)
+- Ernesto Bocini (359541)
+- Lorenzo Drudi (367980)
+- Kaede Johnson (357472)
+- Hanwen Zhang (370374)
+- Xingyue Zhang (351693)
 
+[Datastory](https://github.com/drudilorenzo/ada-klech-data-story) \
+[Datastory repository](https://github.com/drudilorenzo/ada-klech-data-story)
 ## Abstract
    
 LLMs are trained on extremely large corpuses of texts, most of the time written by humans over decades. This enables them to generate human-like sentences and reply to questions in a sound way. But how closely do they adopt human ways of thought? More specifically, can an LLM emulate through behavior the same thinking underpinning human semantic maps? 
