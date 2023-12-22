@@ -123,7 +123,7 @@ Friday, December 22
 
 General Tasks:
 - Develop and Launch Mistral Querying: Ernesto, Lorenzo
-- Exploratory Analysis, Game Pair Subset: Hanwen, Zingyue
+- Exploratory Analysis, Game Pair Subset: Hanwen, Xingyue
 - Click Location Heatmap: Hanwen, Xingyue
 - Non-Heatmap Human vs. Mistral Analysis: Lorenzo, Kaede
 - Data Story Webpage: Lorenzo
