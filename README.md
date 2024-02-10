@@ -8,8 +8,7 @@
 - Hanwen Zhang (370374)
 - Xingyue Zhang (351693)
 
-[Datastory](https://drudilorenzo.github.io/ada-klech-data-story/) /
-
+[Datastory](https://drudilorenzo.github.io/ada-klech-data-story/) \
 [Datastory repository](https://github.com/drudilorenzo/ada-klech-data-story)
 
 ## Abstract
