@@ -1,4 +1,4 @@
-# Huan vs AI: A Comparison of Human and LLM Wikispeedia Strategy
+# Human vs AI: A Comparison of Human and LLM Wikispeedia Strategy
    
 *Klech:* 
 
@@ -61,13 +61,13 @@ We also demonstrate with cumulative completion plots that Mistral is more likely
 
 - If there is a clear winner, what strategy or phenomenon is producing their advantage?
 
-We first analyze the pattern of page degrees over time for human game paths and Mistral game paths, averaging page degrees across all games of similar length by player. We observe Mistral's general inability to implement the human strategy of 'zooming-out' to a hub and zooming back in to a goal, as evidenced by the shape of its degree path curve.
+We first analyze the pattern of page degrees over time for human game paths and Mistral game paths, averaging page degrees across all games of similar length by identity. We observe Mistral's general inability to implement the human strategy of 'zooming-out' to a hub and zooming back in to a goal, as evidenced by the shape of its degree path curve.
 
-We then apply spaCy embeddings to Wikipedia page names to calculate average cosine similarity to goal over time by player. We find humans consistently take an initial semantic step away from their goal, whereas Mistral does not. Ostensibly a response to our prompt, this difference strategy is core to Mistral's inability to zoom out, and may well be the chief factor leading to humans' speed win.
+We then apply spaCy embeddings to Wikipedia page names to calculate average cosine similarity to goal over time by identity. We find humans consistently take an initial semantic step away from their goal, whereas Mistral does not. Ostensibly a response to our prompt, this difference strategy is core to Mistral's inability to zoom out, and may well be the chief factor leading to humans' speed win.
 
-Finally, we use geometric information about link location to visualize click locations for humans and hypothetical click locations for Mistral, observing a difference in click location on Wikipedia page. We compare CCDFs of degrees for pages more likely to be high on a page when appearing as a link versus those less likely to be high on a page when appearing as a link, finding that links that appear lower tend to be of lower degree. We conclude that Mistral blindness to location in combination with a singular focus on semantic similarity may lead it to pursue greedy but ultimately inefficient page paths. 
+Finally, we use geometric information about link location to visualize click locations for humans and hypothetical click locations for Mistral, observing a difference in click location on Wikipedia page. We compare CCDFs of degrees for pages more likely to be high on a page when appearing as a link versus those less likely to be high on a page when appearing as a link, finding that links that appear lower tend to point to pages of lower degree. We conclude that Mistral's blindness to location in combination with a singular focus on semantic similarity may lead it to pursue greedy but ultimately inefficient page paths. 
 
-## Proposed Timeline
+## Timeline
 
 Friday, November 17
 - Milestone 2 deadline
